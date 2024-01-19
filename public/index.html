@@ -6,7 +6,7 @@
     <title>Generate Raandom Password</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-white">
+  <body class="h-dvh bg-white">
     <div class="m-52 w-4/5">
       <!-- Content container -->
       <h1 class="font-medium text-5xl text-gray-700">
@@ -17,16 +17,17 @@
       </h1>
 
       <div
-        class="w-full max-w-lg mt-12 mb-7 bg-primary flex justify-between pt-6 pb-6 pl-5 pr-5 rounded-md"
+        class="w-full max-w-lg mt-12 mb-7 bg-gray-500 flex justify-between pt-6 pb-6 pl-5 pr-5 rounded-md"
       >
         <input
           type="text"
-          id=""
+          id="password"
           placeholder="Password"
-          class="border-0 outline-0 text-lg bg-primary text-slate-100"
+          class="border-0 outline-0 text-lg bg-gray-500 text-slate-100"
         />
         <svg
-          class="w-7"
+          class="w-7 text-primary cursor-pointer"
+          id="copy"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -42,12 +43,12 @@
         </svg>
       </div>
       <button
-        class="flex border-0 outline-0 text-base font-light justify-center pt-4 pb-4 pl-6 pr-6 rounded-md cursor-pointer"
+        class="flex bg-primary text-slate-50 border-0 outline-0 text-base font-normal justify-center pt-4 pb-4 pl-6 pr-6 rounded-md cursor-pointer"
       >
         <svg
           class="w-7 mr-3"
           xmlns="http://www.w3.org/2000/svg"
-          fill="none"
+          fill="white"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
@@ -62,5 +63,7 @@
         Generate Password
       </button>
     </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
